@@ -14,6 +14,8 @@ RUN pyenv rehash
 RUN pip install --upgrade pip
 RUN pip install --upgrade wheel setuptools
 RUN pip install --upgrade pylint rich python-language-server[all]
+# I forgot to publish navx to pypi
+RUN pip install --upgrade robotpy[navx] --find-links https://www.tortall.net/~robotpy/wheels/2021/linux_x86_64/
 RUN pip install --upgrade robotpy[all]
 
 RUN echo 'alias cd..="cd .."' >> ~/.bashrc
