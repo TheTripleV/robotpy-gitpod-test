@@ -5,7 +5,7 @@ import wpilib
 import commands2
 
 from robotcontainer import RobotContainer
-
+from remote_shell import RemoteShell
 
 class MyRobot(commands2.TimedCommandRobot):
     """
@@ -26,6 +26,7 @@ class MyRobot(commands2.TimedCommandRobot):
         # Instantiate our RobotContainer.  This will perform all our button bindings, and put our
         # autonomous chooser on the dashboard.
         self.container = RobotContainer()
+        self.remote_shell = RemoteShell()
 
     def disabledInit(self) -> None:
         """This function is called once each time the robot enters Disabled mode."""
