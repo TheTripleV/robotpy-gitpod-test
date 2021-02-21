@@ -1,0 +1,20 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - before: >
+      cd robot &&
+      code robot.py &&
+      bash /workspace/Robot-2020/.theia/welcome_message
+
+ports:
+  # vnc port
+  - port: 6080
+    onOpen: open-browser
+  # other ports that are open for some reason
+  - port: 1250
+    onOpen: ignore
+  - port: 1735
+    onOpen: ignore
+  - port: 5900
+    onOpen: ignore

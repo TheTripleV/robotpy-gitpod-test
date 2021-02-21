@@ -1,0 +1,14 @@
+*.wpu
+*.pyc
+__pycache__/*.*
+*lastfailed
+*.coverage
+.DS_Store
+
+imgui.ini
+
+settings.json
+c_cpp_properties.json
+
+# Gitpod's version of the .vscode folder
+!.theia/*

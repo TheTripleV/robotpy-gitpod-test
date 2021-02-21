@@ -1,0 +1,20 @@
+
+cat<<'EOF'
++=================================================================+
+| Welcome to VSCode in the cloud!                                 |
++-----------------------------------------------------------------+
+| A placeholder for the sim gui has opened in a new tab.          |
+| Keep that open. That is where you'll see the simulator.         |
+|                                                                 |
+| Once in the robot folder:                                       |
+|   To start the sim:                                             |
+|     RUN: python robot.py sim                                    |
+|     The sim will be visible in the new tab that opened earlier. |
+|   To stop the sim:                                              |
+|     Either:                                                     |
+|       RUN: Ctrl + \                                             |
+|     Or:                                                         |
+|       Close the sim window in the other tab.                    |
+|       Keep the tab open for later.                              |
++=================================================================+
+EOF
